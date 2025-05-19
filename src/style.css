@@ -4,7 +4,36 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer utilities {
+
+  /* header */
+  .navLink {
+    @apply dark:text-white hover:text-white hover:bg-[#262626] px-4 py-2 rounded-full transition hover:scale-105 hover:translate-x-1;
+  }
+
   .cushov {
     @apply transition hover:scale-105 hover:translate-x-1;
   }
+
+  body {
+    @apply font-lexend;
+  }
+}
+
+@layer components {
+  .button {
+    color: #1C1C1C;
+    background-color: #CAFF33;
+    padding: 14px 24px;
+    border-radius: 50px;
+    transition: all;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #d1d1d1;
+  }
+}
+
+@theme {
+  --font-lexend: "Lexend", sans-serif;
 }
