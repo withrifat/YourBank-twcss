@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+/* for dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+  .cushov {
+    @apply transition hover:scale-105 hover:translate-x-1;
+  }
+}
