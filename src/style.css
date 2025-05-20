@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 /* for dark mode */
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer utilities {
